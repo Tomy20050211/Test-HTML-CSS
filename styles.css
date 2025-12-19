@@ -1,0 +1,588 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+:root {
+    --hero-background: #F5F7FA;
+    --buttons-background: #4CAF4F;
+    --header-background: #F5F7FA;
+    --text-color: #263238;
+    --span: #4CAF4F;
+    --local-background: #F5F7FA;
+    --tesla-background: #F5F7FA;
+    --footer-background: #263238;
+    --input: #44555e;
+    --text-footer: #FFFFFF;
+
+}
+
+
+body {
+    color: var(--text-color);
+
+}
+
+header {
+    background: var(--header-background);
+    display: flex;
+    padding: 2rem;
+    align-items: center;
+    justify-content: space-evenly;
+    width: auto;
+    height: auto;
+
+
+}
+
+ul,
+li,
+a {
+    list-style: none;
+    text-decoration: none;
+    color: var(--text-color);
+    display: flex;
+    gap: 3rem;
+}
+
+span {
+    color: var(--span);
+}
+button:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.199);
+}
+button {
+    background: var(--buttons-background);
+    border: 0;
+    color: white;
+    border-radius: 0.3rem;
+    padding: 0.7rem;
+    width: 5rem;
+    height: 3rem;
+    transition: all 0.3s ease;
+    
+}
+
+.login {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.login button {
+    margin: 0;
+}
+
+.login p {
+    color: var(--span);
+}
+
+.hero-container {
+    background: var(--hero-background);
+
+
+}
+
+.hero {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    justify-content: center;
+    padding-top: 5rem;
+}
+.hero img{
+    animation: float infinite;
+}
+.hero-text {
+    padding: 7rem;
+}
+
+h1 {
+    font-size: 3.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+
+.hero-text p,
+button {
+    margin-top: 1rem;
+}
+
+.hero-text button {
+    width: 7rem;
+
+}
+
+p {
+    color: #26323898;
+}
+
+.icon-balls {
+    display: flex;
+    justify-content: center;
+}
+
+.clients {
+    margin-top: 5rem;
+
+}
+
+.our-clients {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.our-clients p,
+h2 {
+    margin-top: 1rem;
+}
+
+.our-clients img {
+    margin: 4rem 0 4rem 0;
+    width: 70%;
+    object-fit: cover;
+}
+
+.cards-clients {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.cards {
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.137);
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    gap: 1rem;
+    text-align: center;
+    margin-top: 4rem;
+    transition: all 0.3s ease;
+}
+
+.cards:hover{
+    transform: translateY(-20px);
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.253);
+}
+
+.cards img {
+    width: 30%;
+}
+
+.second-hero-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+}
+
+.lorem-one {
+    padding: 5rem;
+}
+
+.lorem-one p,
+button {
+    margin-top: 2rem;
+}
+
+.lorem-one button {
+    width: 7rem;
+}
+
+.people img {
+    width: 460px;
+}
+
+.local-container {
+    background: var(--local-background);
+    display: flex;
+    justify-content: center;
+    gap: 10rem;
+    align-items: center;
+    padding: 4rem;
+}
+
+.numbers {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, fr);
+    gap: 2rem;
+
+
+
+}
+
+.numbers-card {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.cards-generals {
+    display: flex;
+    margin-left: 5rem;
+}
+
+
+
+.cards-generals img {
+    object-fit: cover;
+    width: 70px;
+}
+
+.local-article p {
+    margin-top: 1rem;
+}
+
+.three-hero-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+}
+
+.tesla-container {
+    background: var(--local-background);
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+}
+
+.tesla {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 75%;
+    display: flex;
+
+}
+
+.double-cards img {
+    width: 30rem;
+    height: 20rem;
+    object-fit: cover;
+    border-radius: 1rem;
+
+
+}
+
+.target {
+    align-items: center;
+    gap: 5rem;
+    padding: 2rem;
+}
+
+.tesla-container img {
+    border-radius: 2rem;
+    width: 20rem;
+
+}
+
+.lorem-three img {
+    width: 30rem;
+}
+
+.lorem-three p,
+h4,
+img {
+    margin-top: 1rem;
+}
+
+.clients-two {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.clients-two span,
+h4 {
+    color: var(--span);
+    font-size: 1.5rem;
+}
+
+.marketing-container {
+    text-align: center;
+    margin-top: 5rem;
+}
+
+.marketing-container p {
+    margin-top: 1rem;
+}
+
+.double-cards {
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+    gap: 2rem;
+
+}
+
+.double-cards img {
+    width: 30rem;
+    height: 20rem;
+    object-fit: cover;
+    border-radius: 1rem;
+
+}
+.target:hover{
+    transform: translateY(-20px);
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.247);
+}
+.target {
+    background: var(--tesla-background);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.247);
+    border-radius: 1rem;
+    width: 25rem;
+    height: 11rem;
+    padding: 1rem;
+    margin-left: 2.5rem;
+    position: absolute;
+    bottom: 5rem;
+    position: relative;
+    z-index: 10;
+    transition: all 0.3s ease;
+
+
+}
+
+.target p {
+    font-size: 1.2rem;
+}
+
+.parraf {
+    color: var(--text-color);
+    font-weight: 700;
+
+}
+
+.parraf-green {
+    color: var(--span);
+    font-weight: 700;
+}
+
+.get-demo-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 5rem;
+}
+
+.get-demo-container button {
+    width: 10rem;
+}
+
+.get-demo-container h2 {
+    font-size: 5rem;
+}
+
+footer {
+    background: var(--footer-background);
+    color: var(--text-footer);
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2rem;
+}
+
+footer p {
+    color: var(--text-footer);
+}
+
+footer ul li {
+    color: var(--text-footer);
+}
+
+footer ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.more {
+    display: flex;
+
+}
+
+.more div {
+    margin-left: 10rem;
+    padding: 1rem;
+}
+
+.reds p {
+    margin: 1rem;
+}
+
+footer h3 {
+    margin-bottom: 1rem;
+}
+
+input {
+    background: var(--input);
+    border: 0;
+    width: 20rem;
+    height: 3rem;
+    border-radius: 2rem;
+    padding: 1rem;
+
+}
+
+
+@media (max-width: 1024px) {
+
+    header {
+
+        flex-direction: column;
+        height: auto;
+
+    }
+
+    ul {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 3rem;
+    }
+
+    .login {
+        flex-direction: column;
+        margin-top: 3rem;
+    }
+
+    .login button {
+        width: 30rem;
+    }
+
+    .hero {
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 5rem;
+    }
+
+    .hero-text {
+        padding: 0;
+    }
+
+    .clients img {
+        width: 30rem;
+    }
+
+    .cards-clients {
+        flex-direction: column;
+        padding: 4rem;
+
+    }
+
+    .cards img {
+        width: 5rem;
+    }
+
+    .second-hero-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 5rem;
+    }
+
+    .local-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 0;
+
+    }
+
+    .numbers {
+        display: grid;
+        grid-template-columns: 1fr;
+
+    }
+
+    .cards-generals {
+        margin: 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    .cards-generals img {
+        margin-right: 5rem;
+    }
+
+    .local-container {
+        text-align: center;
+        padding: 2rem;
+
+    }
+
+    .three-hero-container {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .tesla {
+        text-align: center;
+        padding: 2rem;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+
+    }
+
+ 
+    
+    .clients-two img {
+        width: 30rem;
+    }
+
+    .clients-two {
+        flex-direction: column;
+    }
+
+    .double-cards {
+        flex-direction: column;
+
+    }
+
+    .get-demo-container h2 {
+        font-size: 2rem;
+    }
+
+    footer {
+        flex-direction: column;
+
+    }
+
+    .more {
+        flex-direction: column;
+    }
+
+    .more div {
+        margin: 0 auto 0 auto;
+        align-items: center;
+
+    }
+
+    .reds {
+        margin: 0 auto 0 auto;
+        align-items: center;
+    }
+
+    input {
+        align-items: center;
+    }
+
+}
